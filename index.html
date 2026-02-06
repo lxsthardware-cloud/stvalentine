@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Valentine Letter</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Screen 1: Envelope -->
+    <main id="envelope-container" aria-label="Open the letter">
+      <img src="assets/envelope.png" alt="Envelope" id="envelope" />
+      <p class="envelope-caption">♡ Letter for You ♡</p>
+    </main>
+
+    <!-- Screen 2: Letter Window -->
+    <section id="letter-container" aria-label="Letter">
+      <div class="letter-window" role="dialog" aria-modal="true" aria-live="polite">
+        <h1 id="letter-title">Will you be my Valentine?</h1>
+
+        <img src="assets/cat_heart.gif" class="cat" id="letter-cat" alt="Cute cat" />
+
+        <div class="buttons" id="letter-buttons" aria-label="Answer buttons">
+          <button class="img-btn yes-btn" type="button" aria-label="Yes">
+            <img src="assets/yes.png" alt="Yes" />
+          </button>
+
+          <div class="no-wrapper">
+            <button class="img-btn no-btn" type="button" aria-label="No">
+              <img src="assets/no.png" alt="No" />
+            </button>
+          </div>
+        </div>
+
+        <p id="final-text" class="final-text" hidden>
+          <strong>Valentine Date:</strong> Meow Restaurant at 7pm. Dress fancy!
+        </p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
